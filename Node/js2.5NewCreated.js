@@ -1,0 +1,1 @@
+console.log(`this is the data written in new file, HIHI`)

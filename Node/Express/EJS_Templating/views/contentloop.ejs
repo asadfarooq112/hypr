@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+
+<!-- Running loops in EJS. E.g We can loop over arr1 array sent from index.js. In reality this type of stuff will be sent from database to index -->
+
+    <% for (let i = 0; i < arr1.length; i++) { %>
+
+        <h1> Name of person from index.js and Loop running in EJS is:  <%= arr1[i] %> </h1>
+
+    <% } %>
+
+    
+</body>
+</html>

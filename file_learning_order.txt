@@ -1,0 +1,108 @@
+// In order of revision. Order mentioned is same as order of notes. Files revision order mentioned too
+
+----> HTML CSS
+[Notes & Folder: Practice HTML & CSS , Practice
+	folder structure accessing
+	linking CSS
+	targeting elements with CSS
+	Padding Margins
+	targeting elements hierarchy CSS
+	multiple targeting CSS
+	positioning
+	display property
+	media queries
+	flex box
+	grid
+]
+
+----> Javascript
+[Notes
+	vars, const, let
+	strings and its methods
+	descision making and logic
+	arrays and its methods
+	objects
+	objects and arrays nesting
+	loops
+	for of
+	functions
+	scope
+]
+[Notes & Folder: JS Base concepts > javascript.js > javascript1.js
+	functions placed in variables			
+	functions taking in functions as arguments
+	functions returning functions
+	object methods
+	this
+	try catch
+	array methods that take in callbacks
+	arrow functions
+	setTimeout
+	arrow functions this
+	default parameters
+	...Spreading
+	...Destructuring
+]
+[Notes & Folder: JS Base concepts > javascript.js > javascript1.js & Folder: Practice JS
+	DOM Manipulation 
+		DOM Objects
+		HTML Collections
+		targeting element objects
+		methods of DOM objects
+		style and class manipulations
+		parent sibling targeting
+		adding elements to HTML
+		EVENTS
+		event Object produced by addEventListener
+		HTML Forms
+		event bubble
+]
+[Notes & Folder: Promises Async Await
+	JS Event Loop
+	Callback Hell
+	ASYNC
+	Promises (resolve, reject -> then, catch)
+	Async
+	Await
+]
+[Notes & Folder: APIs & Backend
+	APIs
+	JSON and parsing
+	HTTP requests
+	query Strings
+	HTTP Headers
+	Fetch API
+	AXIOS
+]
+[Notes & Folder: OOP Javscript
+	prototype Object & __proto__
+	functions that create functions manually
+	new Keyword and Shell (Constructor) functions
+	classes
+	extend and super for classes
+	terminal commands
+]
+[Notes & Folder: OOP Javscript js1 > js2 > js2.5NewCreated > js3NewCreated > Folder[js4] 
+	NODE
+		NODE Repl
+		require
+		process Object
+		npm
+		npm filesystem
+		module.exports 
+		importing whole folder
+		]
+	[Notes & Folder: Express > index.js > 
+		Express server setup
+		routing and responding to requests
+		params and query routing
+		npm init & package.json
+		]
+			[Notes & Folder: EJS_Templating > index.js > Folder[views]
+				responding with rendered HTML ejs
+				sending data from index.js to views ejs
+				ejs loops
+				
+		
+		
+

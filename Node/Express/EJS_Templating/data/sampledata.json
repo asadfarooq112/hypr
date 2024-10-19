@@ -1,0 +1,152 @@
+[
+    {
+        "name": "John Doe",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "description": "John is a web developer who specializes in JavaScript frameworks."
+    },
+    {
+        "name": "Jane Smith",
+        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "description": "Jane is a graphic designer passionate about user experience and branding."
+    },
+    {
+        "name": "Michael Johnson",
+        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "description": "Michael is a software engineer focused on cloud solutions."
+    },
+    {
+        "name": "Emily Davis",
+        "image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "description": "Emily is a marketing specialist with a love for social media strategies."
+    },
+    {
+        "name": "William Brown",
+        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "description": "William is a product manager working on innovative tech solutions."
+    },
+    {
+        "name": "Olivia Miller",
+        "image": "https://randomuser.me/api/portraits/women/3.jpg",
+        "description": "Olivia is a content creator and freelance writer."
+    },
+    {
+        "name": "James Wilson",
+        "image": "https://randomuser.me/api/portraits/men/4.jpg",
+        "description": "James is an AI researcher working on neural networks and deep learning."
+    },
+    {
+        "name": "Sophia Taylor",
+        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "description": "Sophia is a data scientist with expertise in machine learning."
+    },
+    {
+        "name": "Liam Anderson",
+        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "description": "Liam is an entrepreneur and startup consultant."
+    },
+    {
+        "name": "Isabella Thomas",
+        "image": "https://randomuser.me/api/portraits/women/5.jpg",
+        "description": "Isabella is a front-end developer with a passion for accessibility."
+    },
+    {
+        "name": "Henry Jackson",
+        "image": "https://randomuser.me/api/portraits/men/6.jpg",
+        "description": "Henry is a UX/UI designer creating intuitive user experiences."
+    },
+    {
+        "name": "Ava White",
+        "image": "https://randomuser.me/api/portraits/women/6.jpg",
+        "description": "Ava is a project manager with experience in agile methodologies."
+    },
+    {
+        "name": "Noah Harris",
+        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "description": "Noah is a full-stack developer with a knack for solving complex problems."
+    },
+    {
+        "name": "Mia Martin",
+        "image": "https://randomuser.me/api/portraits/women/7.jpg",
+        "description": "Mia is a digital marketer and SEO expert."
+    },
+    {
+        "name": "Alexander Lee",
+        "image": "https://randomuser.me/api/portraits/men/8.jpg",
+        "description": "Alexander is a cybersecurity analyst focusing on data protection."
+    },
+    {
+        "name": "Amelia Walker",
+        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "description": "Amelia is a mobile app developer building intuitive apps."
+    },
+    {
+        "name": "Benjamin Hall",
+        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "description": "Benjamin is a DevOps engineer streamlining cloud deployments."
+    },
+    {
+        "name": "Harper King",
+        "image": "https://randomuser.me/api/portraits/women/9.jpg",
+        "description": "Harper is a creative director with a love for storytelling."
+    },
+    {
+        "name": "Ethan Scott",
+        "image": "https://randomuser.me/api/portraits/men/10.jpg",
+        "description": "Ethan is a backend developer who works with databases and APIs."
+    },
+    {
+        "name": "Charlotte Green",
+        "image": "https://randomuser.me/api/portraits/women/10.jpg",
+        "description": "Charlotte is a data analyst making sense of big data."
+    },
+    {
+        "name": "Daniel Young",
+        "image": "https://randomuser.me/api/portraits/men/11.jpg",
+        "description": "Daniel is an IT consultant helping businesses with technical solutions."
+    },
+    {
+        "name": "Ella Moore",
+        "image": "https://randomuser.me/api/portraits/women/11.jpg",
+        "description": "Ella is a fashion designer blending creativity with sustainability."
+    },
+    {
+        "name": "Matthew Perez",
+        "image": "https://randomuser.me/api/portraits/men/12.jpg",
+        "description": "Matthew is a hardware engineer designing next-gen devices."
+    },
+    {
+        "name": "Abigail Cooper",
+        "image": "https://randomuser.me/api/portraits/women/12.jpg",
+        "description": "Abigail is a photographer capturing moments through her lens."
+    },
+    {
+        "name": "Jackson Ward",
+        "image": "https://randomuser.me/api/portraits/men/13.jpg",
+        "description": "Jackson is a video game developer specializing in AR/VR."
+    },
+    {
+        "name": "Sofia Hughes",
+        "image": "https://randomuser.me/api/portraits/women/13.jpg",
+        "description": "Sofia is a health coach advocating for fitness and wellness."
+    },
+    {
+        "name": "Sebastian Lewis",
+        "image": "https://randomuser.me/api/portraits/men/14.jpg",
+        "description": "Sebastian is a blockchain developer working on decentralized applications."
+    },
+    {
+        "name": "Grace Clark",
+        "image": "https://randomuser.me/api/portraits/women/14.jpg",
+        "description": "Grace is a journalist who covers technology and innovation."
+    },
+    {
+        "name": "David Turner",
+        "image": "https://randomuser.me/api/portraits/men/15.jpg",
+        "description": "David is a robotics engineer creating autonomous systems."
+    },
+    {
+        "name": "Zoey Hill",
+        "image": "https://randomuser.me/api/portraits/women/15.jpg",
+        "description": "Zoey is an interior designer known for her modern minimalist style."
+    }
+]

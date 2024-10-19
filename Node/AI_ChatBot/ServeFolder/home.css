@@ -1,0 +1,235 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #1200d4;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+/* Signup Button */
+.signup-btn .btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.signup-btn .btn:hover {
+    background-color: #007bff;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:30px ;
+}
+
+.item-container {
+    border: solid 2px black;
+    min-width: 300px;
+    max-width: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: white;
+}
+
+.heading {
+    font-size: 60px;
+    text-align: center;
+}
+
+.description {
+    margin: 10px;
+    height: 160px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    height: 60px;
+}
+
+.use-button-CS {
+    flex: 2;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.use-button-CSX {
+    flex: 2;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.use-button-XCall {
+    flex: 2;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+
+.sourcecode-button {
+    flex:1.2;
+    padding-top: 20px;
+    background-color: rgb(189, 189, 189);
+}
+
+.docs-button {
+    flex: 0.8;
+    padding-top: 20px;
+    background-color: rgb(220, 220, 220);
+}
+
+.use-button:hover {
+    background-color: #007bff;
+}
+.sourcecode-button:hover {
+    background-color: #007bff;
+}
+.docs-button:hover {
+    background-color: #007bff;
+}
+
+a {
+    color:black;
+    text-decoration: none; 
+}
+
+
+.login-popup-CS {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 350px;  
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px black;
+}
+
+.login-popup-CSX {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 350px;  
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px black;
+}
+
+.login-popup-XCall {
+    display: none;
+    position: fixed;
+    width: 400px;
+    height: 350px;  
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px black;
+}
+
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 350px;;
+    margin-bottom: 15px;
+    font-size:1.2em;
+} 
+.login-btn {
+    width: 100px;
+    height: auto;
+    font-size: 1.2em;
+}
+
+.form-group input {
+    height: 30px;
+}

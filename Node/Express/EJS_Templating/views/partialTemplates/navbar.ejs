@@ -1,0 +1,158 @@
+<!-- This is an ejs file whose complete code we will use in another ejs file
+In the EJS files where we want to use it, we will do < % include ('partialTemplates/navbar.ejs') % > (whithout the space) -->
+
+
+<!-- I took this navbar from ChatGPT -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            left: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            margin: 0 15px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Responsive hamburger menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            ul.active {
+                display: flex;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* Beautiful hover effects */
+        nav ul li a::before {
+            content: '';
+            display: block;
+            height: 3px;
+            background-color: #f1c40f;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">MyBrand</div>
+        <ul id="nav-menu">
+            <li><a href="http://localhost:3000/">Home</a></li>
+            <li><a href="http://localhost:3000/users">DataLoops</a></li>
+            <li><a href="http://localhost:3000/page1">Page1</a></li>
+            <li><a href="http://localhost:3000/r/SubredditHELLO">r/Subreddits</a></li>
+            <li><a href="http://localhost:3000/content-loop">ContentLoops</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

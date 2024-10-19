@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1> Usind Data from index.js file.</h1>
+    <br>
+    <h1> Using the r/bla BLa you mention. That is: <%= subreddit %> </h1>
+    
+    <!-- To use conditionals or other long code, type in javascript directly and add  around every line of js
+    to print HTML, just type in html as you would normall  -->
+    
+    <% if (subreddit == 'block') { %>
+        <div style="width:200px; height:200px; background-color: blue; "> BLOCK </div>
+
+    <%} else { %>     
+
+        <p> type parameter 'block' to show magic block </p>
+    <% }; %>
+    
+
+
+</body>
+</html>

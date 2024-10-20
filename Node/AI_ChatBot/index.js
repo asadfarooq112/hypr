@@ -58,13 +58,30 @@ app.get('/agentCS', (req,res) => {
 })
 
 // multer upload destination defined
-const upload = multer({ dest: './uploads' });
+const uploadDocs = multer({ dest: './uploads/docs' });
+
+// multer requires that a post request is send with using FormData constructor format.
+// In multer response, req.file is the file object
 
 // Middleware functions can be added in between the app.post or get etc, between the path and function callback
-app.post('/docUpload', upload.single('file') ,(req, res) => {
+app.post('/docUpload', uploadDocs.single('file') ,(req, res) => {
 
     res.json({message: 'File uploaded. You can upload more if you like', file: req.file})
 } );
+
+
+
+
+// Copy Pasting form for imgsUpload
+
+// multer upload destination defined
+const uploadImgs = multer({ dest: './uploads/images' });
+
+app.post('/imgsUpload', uploadImgs.single('file') ,(req, res) => {
+
+    res.json({message: 'File uploaded. You can upload more if you like', file: req.file})
+} );
+
 
 
 

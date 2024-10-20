@@ -32,28 +32,71 @@
     </p>
 
     <div class="grid-container">
+
+
         <div class="documents">
 
             <!-- File Upload Form. When submitted, it sends POST request (not directly) through fetch API client side
             Therefore, there is not method and action attributes in the form -->
 
             <form id="uploadFormDocs">
-                    <label for="docsfile">Select a PDF file to upload:</label>
+                    <label for="docsFile">Upload all PDF Files one by one </label>
                     <input type="file" id="docsFile" name="file" required>
                 <button type="submit">Upload</button>
             </form>
+        </div>
 
 
+        <div class="images">
+            <!-- Using same form as document upload form since not filering for file type -->
 
+            <form id="uploadFormImgs">
+                <label for="imgsFile">Upload all Image Files one by one </label>
+                <input type="file" id="imgsFile" name="file" required>
+            <button type="submit">Upload</button>
+
+        </form>
+
+        </div>
+
+
+        <div class="urls">
+
+        <form id="urlForm">
+            <label> Enter all Urls relavant to your business </label>
+            <input type="url" id="url1" name="url1">
+            <input type="url" id="url2" name="url2">
+            <input type="url" id="url3" name="url3">
+            <input type="url" id="url4" name="url4">
+            <input type="url" id="url5" name="url5">
+            <input type="url" id="url6" name="url6">
+            <input type="url" id="url7" name="url7">
+            <button type="submit" class="submitUrl"> Submit </button>        
+
+        </form>
+        </div>
+
+
+        <div class="text">
+            
+            <form id="textInputForm">
+                <label for="textInput"> Enter all the possible text about your business: </label>
+                <textarea id="textInput" name="textInput" rows="16" cols="127"></textarea>
+            </form>
 
 
         </div>
-        <div class="images"></div>
-        <div class="urls"></div>
-        <div class="text"></div>
         
     </div>
 
+    <div class="createAgent">
+        <form id="createAgentForm">
+        <label for="createAgentName"> Your Agent's Name </label>
+        <input id="createAgentName" type="text" name="createAgentName" ><br>    
+        <button id="createAgentButton"> Create Agent </button>
+        </form>
+
+    </div>
 
 
     <script src="./agentCS.js"></script>

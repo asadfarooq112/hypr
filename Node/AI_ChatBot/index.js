@@ -14,7 +14,7 @@ app.get('/', (req,res) => {
 })
 
 
-// Users Array Objects (later will use Databases instead)
+// Users Array of Objects contains email and password(later will use Databases instead)
 let usersArray = [];
 
 
@@ -29,7 +29,27 @@ app.post('/signup', (req,res) => {
     console.log(usersArray);
 })
 
-//login page
+// login popUp AgentCS
+// Login form sends object {email password} in req.body which we can check if exists in usersArray using .some method
+// .some method loops through each element of Array and we provide a consition code using that element, and return anything
+// Arrow function automatically returns the statement
+
+app.post('/agentCS', (req,res) => {
+    const trueIfExists = usersArray.some( credentialObj => 
+        credentialObj.email == req.body.email && credentialObj.password == req.body.password
+    );
+
+
+    if (trueIfExists == true) {
+        console.log(req.body);
+        res.render('agentCS.ejs');
+    }
+    else {
+        console.log('doesnt exist');
+        res.render('wrongCredentials.ejs');
+    }
+
+})
 
 
 app.listen(3600, () => {console.log(`Server is listening on port http://localhost:3600`)});

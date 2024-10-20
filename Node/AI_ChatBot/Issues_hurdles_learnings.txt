@@ -1,0 +1,33 @@
+
+When responding to post request from form of login to agent CS:
+
+I used the following code:
+
+
+app.post('/agentCS', (req,res) => {
+
+    const trueIfExists = usersArray.some( credentialObj => 
+        credentialObj.email == req.body.email && credentialObj.password == req.body.password
+    );
+
+    if (trueIfExists == true) {
+        console.log(req.body);
+        res.render('agentCS.ejs');
+    }
+    else {
+        console.log('doesnt exist');
+        <<<<<<<<<<
+        PROBLEM IS: That if login creddentials are not correct, we can do res.json() or res.send() or res.render()
+        all of which redirect to new page. I want that if credentials are not correct just an error msg is added via DOM manipulation
+        >>>>>>>
+
+    }
+
+})
+
+Alternatiely, maybe another shit method was to create a new login page and make request from form there,
+if logins wrong could do res.render('samePage.ejs', {login: false});
+
+and in samePage.ejs I could use a conditional that if login is false, the I do a display a <div> or msg, otherwise not.
+
+_________

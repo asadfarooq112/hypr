@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./home.css" />  
+    <link rel="stylesheet"  href="./agentCS.css" />  
     <title> Agent CS </title>
 </head>
 
 <body>
-    <h1> I am Agent CS </h1>
+    <!-- Navbar Code taken from ChatGPT -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#">HYPR</a>
+            </div>
 
-    <script src="./home.js"></script>
+            <div class="title"> <h1> Agent CS </h1></div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Source Code</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <p class="top-text"> Give the Agent all the information possible about your business. Upload PDF documents, URLs, Images and 
+        Text containing all the information about your business that you want the Agent to know. The Agent will
+        extract everything itself.
+    </p>
+
+    <div class="grid-container">
+        <div class="documents">
+
+            <!-- File Upload Form. When submitted, it sends POST request (not directly) through fetch API client side
+            Therefore, there is not method and action attributes in the form -->
+
+            <form id="uploadFormDocs">
+                    <label for="docsfile">Select a PDF file to upload:</label>
+                    <input type="file" id="docsFile" name="file" required>
+                <button type="submit">Upload</button>
+            </form>
+
+
+
+
+
+        </div>
+        <div class="images"></div>
+        <div class="urls"></div>
+        <div class="text"></div>
+        
+    </div>
+
+
+
+    <script src="./agentCS.js"></script>
 </body>
 </html>

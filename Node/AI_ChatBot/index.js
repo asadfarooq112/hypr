@@ -1,6 +1,7 @@
 const express =require('express');
 const app = express();
 const path = require('path');
+const multer = require('multer');  //To handle file uploads
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));  
 app.use(express.static(path.join(__dirname, 'ServeFolder'))); // Serving static content in folder ServeFolder
@@ -15,7 +16,7 @@ app.get('/', (req,res) => {
 
 
 // Users Array of Objects contains email and password(later will use Databases instead)
-let usersArray = [];
+let usersArray = [ { email: 'a@a.com', password: 'a' } ];
 
 
 //signup page
@@ -50,6 +51,21 @@ app.post('/agentCS', (req,res) => {
     }
 
 })
+
+//Temporary GET request allow to agentCS for development (normally only accesible by post request)
+app.get('/agentCS', (req,res) => {
+    res.render('agentCS.ejs');
+})
+
+// multer upload destination defined
+const upload = multer({ dest: './uploads' });
+
+// Middleware functions can be added in between the app.post or get etc, between the path and function callback
+app.post('/docUpload', upload.single('file') ,(req, res) => {
+
+    res.json({message: 'File uploaded. You can upload more if you like', file: req.file})
+} );
+
 
 
 app.listen(3600, () => {console.log(`Server is listening on port http://localhost:3600`)});

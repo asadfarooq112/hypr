@@ -31,3 +31,11 @@ if logins wrong could do res.render('samePage.ejs', {login: false});
 and in samePage.ejs I could use a conditional that if login is false, the I do a display a <div> or msg, otherwise not.
 
 _________
+
+
+According to ChatGPT, if do res.json() but I do not make the request from browser URL (like in form method="POST" action="/bla"),
+instead, on client side (by removing the method and action attributes of the form), if I use addEventListener to form and make an AJAX Fetch request when button clicked, then the res.json()
+in the broswer will not redirect to a new page. Lets try and check.
+
+(It says the reason is the by default requests sent from FORM directly expect a full HTML page response, not a JSON response).
+To make request using 

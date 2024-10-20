@@ -1,0 +1,84 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #1200d4;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.title {
+    color:white;
+}
+
+.top-text {
+    font-size: 1em;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: calc(100% - 160px);
+}
+
+.documents, .images, .urls, .text {
+    padding: 20px; /* Optional: Adds padding inside the grid items */
+    border: 1px solid black;
+}
+
+.text {
+    grid-column: span 3;
+}

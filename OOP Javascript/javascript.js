@@ -10,7 +10,7 @@ console.log(Array.prototype);
 //We can also add new methods to Prototypes. Example:
 
 Array.prototype.newMethod = function () {
-    console.log(this.push('this is the PUSHED ELEMENT'));
+    this.push('this is the PUSHED ELEMENT');
 }
 
 //Above, this refers to the Object in which the method lies, i.e in our case the Array

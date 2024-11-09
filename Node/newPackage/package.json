@@ -1,5 +1,5 @@
 {
-  "type": "module",
+
   "name": "newpackage1",
   "version": "1.0.0",
   "description": "playing with npm",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Asad",
-  "license": "ISC",
+  "license": "ISC",s
   "dependencies": {
     "figlet": "^1.7.0",
     "franc": "^5.0.0",

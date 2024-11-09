@@ -20,7 +20,7 @@ app.get('/product/:prodName', (req,res) => {
 
 app.get('/', (req,res) => {
     console.log(req.query);  //prints { key1: '10', key2: 'Asad' }  when user enters localhost:4000/?key1=10&key2=Asad
-    res.send('<h1> Editing this text to want for nodemon </h1>');
+    res.send(`<h1> If you entered nothing object will be empty, otherwise it will contain your Query String as Object (req.query gives an object) </h1> <br> ${req.query}`);
 })
 
 

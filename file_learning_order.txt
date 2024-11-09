@@ -82,7 +82,7 @@
 	extend and super for classes
 	terminal commands
 ]
-[Notes & Folder: OOP Javscript js1 > js2 > js2.5NewCreated > js3NewCreated > Folder[js4] 
+[Notes & Folder: OOP Javscript & Folder[Node] js1 > js2 > js2.5NewCreated > js3NewCreated > Folder[js4] 
 	NODE
 		NODE Repl
 		require

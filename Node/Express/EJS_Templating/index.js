@@ -26,13 +26,15 @@ app.get('/', (req,res) => {
 
 // You can pass in Object to be used in the res.render (this object will be available in the page1.ejs file so you dont have)
 // to type compelx detailed javascript logic in the ejs file. You can pass the stuff from index.js to page1.ejs directly
+// The things passed in the object like variables (key1:value1 pairs) or functions, arrays, anything will be accessible directly in the ejs file.
+// (you dont have to do objectBla.key1,  you can directly use key1 as a variable)
 
 app.get('/page1', (req,res) => {
 
     let randValue = Math.random() * 10;  // Sample data to send to page1.ejs so we dont have to type complex logic
     let funcSum = (a,b) => a + b;
  
-    res.render('page1.ejs', {randValue:randValue, funcSum});    // is key value pair is same, we can also use just key name e.g {randValue, funcSum}
+    res.render('page1.ejs', {randValue:randValue, funcSum: funcSum});    // is key value pair is same, we can also use just key name e.g {randValue, funcSum}
 }) 
 
 
@@ -70,7 +72,7 @@ app.get('/users', (req,res) => {
 // app.use(express.static(path.join(__dirname, 'ServeFolder1'))); // I am adding this on the top of this file so it serves before other requests
 
 
-app.listen(3000, () => {console.log('listening on port 3000!')});
+app.listen(3200, () => {console.log('listening on port 3200!')});
 
 
 

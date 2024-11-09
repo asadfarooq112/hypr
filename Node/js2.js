@@ -11,7 +11,7 @@ console.log(var1);
 const fs = require('fs');
 
 try{
-fs.writeFileSync('js2.5NewCreated.js', 'console.log(`this is the data written in new file, HIHI`)');
+fs.writeFileSync('js2.5NewCreated.js', 'console.log(`this is the data written in new file, HIHI222222222222222222`)');
 }
 catch (e) { console.log(e);}
 // It matters where you run the node js. If you use whole path its better
@@ -23,7 +23,7 @@ console.log(process.argv[1]);
 console.log(__dirname);
 
 
-// To use code from another file, use require('./filename') without .js at end of filename
+// To use code (data) from another file, use require('./filename') without .js at end of filename
 //e.g
 
 const newFile = require('./js3NewCreated');
@@ -43,6 +43,9 @@ console.log(newFile.funcMinusMethod(10,5)); //prints 5.  Note that the method na
 // E.g
 
 let wholeFolderJs4 = require('./js4');
+
+// Since index.js file in folder js4 does module.exports = array,  the variable here wholeFolderJs4 becomes an array (not an object like ususal)
+// (read last line comment in index.js in folder js4)
 
 console.log(wholeFolderJs4);
 

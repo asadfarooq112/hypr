@@ -40,7 +40,7 @@ func1(5);
 
 /// arrow functino to add line in console
 
-const line = () => console.log('----------------------');
+const line = () => {console.log('----------------------')};
 
 
 ////////////////////
@@ -132,7 +132,7 @@ for (let i = 0; i < allSpans.length; i++) {
 }
 
 
-// Using FOR OF LOOP (incorporating i so we can interate array indexes)
+// Using FOR OF LOOP (incorporating i so we can iterate array indexes)
 let i = 0;
 for (let eachSpan of allSpans) {
     

@@ -41,7 +41,7 @@ while (1) {
         console.log('enter correct value type');
     }
 
-
+    console.log(array);
 
     }
 

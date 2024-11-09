@@ -1,1 +1,1 @@
-console.log(`this is the data written in new file, HIHI`)
+console.log(`this is the data written in new file, HIHI222222222222222222`)

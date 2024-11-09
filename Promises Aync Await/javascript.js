@@ -60,7 +60,7 @@ colorChangeAfterInterval(colorArray);
 // setTimeout(() => console.log('Asynchronous 2 (Delayed)'), 1000);
 // console.log('Asynchronous 3');
 
-///Creating a Standalone Promise
+///Creating a Standalone Promise (promise is an object)
 
 const promObj = new Promise((resolve, reject) => {
     setTimeout( () => {
@@ -106,7 +106,7 @@ let funcPromReturn = (url) => {
 
     return new Promise((resolve, reject) => {
     setTimeout( () => {
-    if (num2 < 0.7) {resolve(`This ${url} is resolved`)}
+    if (num2 < 0.8) {resolve(`This ${url} is resolved`)}
     else {reject(`This ${url} is rejected`)}; 
 
     },500);

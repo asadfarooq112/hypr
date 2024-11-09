@@ -1,15 +1,16 @@
 // isntall express using npm install express. (initialize using nmp init first)
 
-// Standard: 1) require express gives us a function. 2) we need to call the function and place it in a variable.
+// Standard: 1) require express gives us a function. 
+// 2) we need to call the function and to place the return value in a variable.
 // 3) use app.listen(port, Callback) to start listening on port
-// 4) on local server use http://localhost:3000
+// 4) on local server to access, use url http://localhost:3000
 // app.use(req, res => {callBack}) runs everytime we get a new request
 
 const express = require('express');
 
 const app = express();
 
-app.listen(3000, () => {console.log(`Server is listening on port http://localhost:3000`)});
+app.listen(3100, () => {console.log(`Server is listening on port http://localhost:3100`)});
 
 
 // On every app.use(req,res => {callback}), Express creates two objects req, and res (you can rename them whatever like any other callback;
@@ -18,8 +19,8 @@ app.listen(3000, () => {console.log(`Server is listening on port http://localhos
 
 // res Object used to send response
 // res.send(data)  data can be a html, buffer, string, object or array. (buffer is binary data type in node)
-// if response data is object or array, it is automatically converted to JSON format
-// we can only send on time per request, so anytime we run res.send, sending anything else is not possible
+// *if response data is object or array, it is automatically converted to JSON format
+// we can only send one time per request, so anytime we run res.send, sending anything else is not possible
 
 
 //app.use responds to all requests in a similar manner:
@@ -28,7 +29,7 @@ app.listen(3000, () => {console.log(`Server is listening on port http://localhos
 //     console.log('We got a new request!')
 //     // console.log(req);
     
-//     // res.send('<p>This is the response</p>');  -> We can also send html directly as a string ofcourse
+//     // res.send('<p>This is the response</p>');    // We can also send html directly as a string ofcourse
 
 //     // res.send({name: 'Asad', age: 24});    //This sends a json response. Better to use res.json(javascriptObject) instead of res.send for sending json
 
@@ -49,12 +50,13 @@ app.listen(3000, () => {console.log(`Server is listening on port http://localhos
 //GET root url repsonse
 app.get('/', (req,res) => {
     res.send('<h1>GET RESPONSE: This is the home directory </h1>');
-    console.log('we got a request on home');
+    console.log('we got a GET request on home');
 });
 
 //POST root url response
 app.post('/', (req,res) => {
     res.send('<h1>POST RESPONSE: This is the home directory </h1>');
+    console.log('we got a POST request on home');
 });
 
 //GET specific page response (can use post too)

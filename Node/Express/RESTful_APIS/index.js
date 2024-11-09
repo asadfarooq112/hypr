@@ -1,5 +1,5 @@
 // GET requests: used to receive data. can also send some data in form of query string
-// POST requests: used to create, edit or delete from server. ANY data sent and through requests body
+// POST requests: used to create, edit or delete from server. ANY data sent and received through requests body
 
 const express =require('express');
 const app = express();
@@ -7,15 +7,15 @@ const path = require('path');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));  
 
-app.use(express.urlencoded({extended:true})); //Telling express how to manage post requests req.body for form url data
-app.use(express.json());                        //Telling express how to manage post requests req.body for JSON data
+app.use(express.urlencoded({extended:true})); //Telling express how to manage post requests req.body for form url data (html form i mean)
+app.use(express.json());                      //Telling express how to manage post requests req.body for JSON data
 
 app.get('/', (req,res) => {
     res.render('form1.ejs');
 })
 
 
-//We can access data sent from GET request via query string req.query
+//We can access data sent from GET request in a form via query string req.query. The keys for the data entered is the attribute name= in the input field
 app.get('/submit1', (req,res) => {
     res.send('This was a GET request');
     console.log(req.query);

@@ -9,6 +9,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use(express.urlencoded({extended:true})); //Telling express how to manage post requests req.body for form url data (html form i mean)
 app.use(express.json());                      //Telling express how to manage post requests req.body for JSON data
+// if we don't do this, req.body will be undefined regardless of what data is sent by the client to us in the post request
 
 app.get('/', (req,res) => {
     res.render('form1.ejs');

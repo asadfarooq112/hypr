@@ -66,7 +66,9 @@ app.get('/users', (req,res) => {
 // !!! To use Css and Javascript static files which you connect to the HTML pages sent by server, following steps:
 // 1) Create a directory in root folder where you wanna place the the files. (e.g you send app.css & js1.js)
 // 2) Send the contents of the directory with response using app.use(express.static('folderPath'))
-// 3) To connect in HTML, use href="app.css"  NOT "folderPath/app.css" because this method sends the content of the folder, not the folder itself
+// 3) To connect in HTML, use href="./app.css"  NOT "./folderPath/app.css" because this method sends the content of the folder, not the folder itself
+// (we use ./app.css directly even though it was contained in the ServerFolder1 because we served the static 
+// folder SO EVEYRTHING WE SERVED in the folder is accessible as if its placed in the root directory)
 
 //e.g serving a directory called ServeFolder1 with file app.css which I'll connect to contentloop.ejs
 // app.use(express.static(path.join(__dirname, 'ServeFolder1'))); // I am adding this on the top of this file so it serves before other requests

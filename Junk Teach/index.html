@@ -19,16 +19,25 @@
     <p class="p1"> This is a paragraph. </br> this line is added after br tag</p>
     
     <ul class="ul">
-        <li> li1 </li>
+        <li> li1 
+
+            <ul class="innerUl">
+                <li class="innerLi"> List Inside list1 (targeted by > parent selector) </li>
+                <li> List Inside list2 </li>
+            </ul>
+
+        </li>
         <li> li2 </li>
         <li> li3 </li>
     </ul>
+
 
     <ol class="ol">
         <li> li 1 </li>
         <li> li 2 </li>
         <li> li 3 </li> 
     </ol>
+
 
     <form action="/">
         <label for="idOfInput1"> Label 1 </label>
@@ -43,9 +52,18 @@
 
     <br><br>
 
+
     <div class="outerDiv"> Outer Div
         <div class="innerDiv"> Inner Div  </div>
     </div>
+
+
+    <div class="outerDiv2"> Outer Div 2 </div>
+
+        <div class="innerDiv2"> 
+
+            
+        </div>
 
 </body>
 

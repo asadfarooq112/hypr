@@ -1,0 +1,115 @@
+-make code as reusable as possible
+../../ two folders back
+
+body > ul > li:nth-child(2)
+another way to select ccss (taken from chrome)
+
+make html seo friendly
+
+tyr to use as less divs as possible
+
+learn best way to structure html
+
+use dev tools for css (its better)
+
+string methods used mostly:
+-endsWith
+-includes
+-indexOf
+-length
+-match
+-replace
+-replaceAll
+-slice
+-splice
+-split
+-startsWith
+-substr
+-substring
+-toLowerCase
+-toUpperCase
+-trim
+
+` ` When using back ticks, it shows as exactly wioth spoaces and enters as it is written in code
+
+
+// Hoisting: Javascstipt first saves varibales declared with VAR as iundefined when called before initialized later in code. Fucntions can run normally even if intiialized later in code.  (Hoisting helps in debugging, learn hosting in detail)
+
+let funcDivisor = function(divisor) {
+
+    return function(number) {
+        console.log(number/divisor);
+    }
+}
+
+funcDivisor(7)(14);   this can work also]
+
+syntax to run nameless functions  (function defitinion)(argument)
+
+Objects and arrays are passed by reference. Therefore if you edit an object in a function (object is passed as argument in the function), the actual memory address if affected and therefore the object outside the fucntion is also changed. Same is the case the with arrays, i fyou want to avoid this, make a deep copy. {which we can make with ... spread}
+
+also if you assign a new varibale to an object. changing the new varibale also changes the object, same is case with array.
+
+Therefore we use this.
+
+
+If you know that you will change the value of the variable, use let otherwise almost alwyas use const
+
+
+array.sort() we can use call back inside a-b (ascending), b-a (descending)
+
+console.log(array1.sort(
+    (a,b) => {
+        return b-a;
+    }
+));
+
+
+ Common Array methods used:
+-every
+-filter
+-find
+-findIndex
+-flat
+-forEach
+-includes	
+-indexOf
+-join
+-length
+-map
+-pop
+-push
+-reduce
+-reverse
+-slice
+-some
+-sort
+-splice
+
+
+
+forEach vs map:
+		forEach when we only want to use array values. Map when we want to use each value to create a new array (or modified array)
+
+
+
+// Object Methods are useful: (don't need to memorize)
+
+// Object.keys() – Returns the keys of the object.
+// Object.values() – Returns the values of the object.
+// Object.entries() – Returns the key-value pairs of the object.
+// Object.assign() – Copies properties from one or more objects to a target object.
+// Object.freeze() – Freezes the object, making it immutable.
+// Object.seal() – Seals the object, preventing new properties from being added.
+// Object.create() – Creates a new object with a specified prototype.
+// Object.defineProperty() – Defines a property on an object.
+// Object.defineProperties() – Defines multiple properties on an object.
+// Object.getOwnPropertyDescriptors() – Returns the descriptors of all properties.
+// Object.getPrototypeOf() – Returns the prototype of the object.
+// Object.setPrototypeOf() – Sets the prototype of the object.
+// Object.is() – Checks if two values are the same.
+// Object.isExtensible() – Checks if new properties can be added to the object.
+// Object.preventExtensions() – Prevents new properties from being added.
+
+
+Sets are just arrays without duplicate values. You can create new set using Set constructor

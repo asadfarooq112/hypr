@@ -1,9 +1,14 @@
 .h21 {
     color: red;
+    display: inline;
 }
 
 .h22 {
     color: blue;
+    display: inline-block;
+    border: 1px black dotted;
+    height: 50px;
+    width: 100px;
 }
 
 .p1 {

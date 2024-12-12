@@ -1,0 +1,58 @@
+h2 {
+    display: inline-block;
+    height: 100px;
+    width:100px;
+    border: solid black;
+}
+
+p {
+    color: red;
+    display: inline;
+
+}
+
+.para1 {
+    color: blue;
+}
+
+#idPara {
+    color: green;
+}
+
+p, a, img {
+    color: grey;
+}
+
+ul > li {
+    color:red;
+}
+
+ul > li > ul > li {
+    color:green;
+}
+
+li[attributeMarziKa="marzi"] {
+    color:purple;
+}
+
+.container {
+    border: solid black;
+    width: 600px;
+    height: 600px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+innerItem {
+    border: solid black dotted;
+}
+
+@media (max-width: 600px) {
+
+    body{
+        background-color: grey;
+    }
+
+}

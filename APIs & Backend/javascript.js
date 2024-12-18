@@ -24,6 +24,7 @@ console.log(jsonDataAgain);
 
 //e.g
 
+
 fetch("https://swapi.dev/api/people/1")
     .then( (resolve) => {
         //here resolve is an OBJECT (since fetch always resolves an object)

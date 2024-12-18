@@ -180,30 +180,172 @@ console.log(Object.values(objNew));
 
 console.log(Object.entries(objNew));
 
+console.log(document);
+
+
+
+const para1 = document.getElementById('idPara');
+
+console.log(para1);
+
+para1.style.backgroundColor = 'red';
+
+console.log(document.getElementsByTagName('li'));
+
+const liQuery = document.querySelector('.class2');
+
+liQuery.style.color = 'purple';
+
+liQuery.innerHTML = '<br> hjfkdsjkf <br> sdfasda <hr> dsafds';
+
+const link1 = document.querySelector('a');
+
+link1.href = 'yahoo.com';
+
+console.log(window);
+
+
+const newPara = document.createElement('p');
+
+newPara.innerHTML = 'fadsfdsaf';
+
+newPara.style.color = 'red';
+
+
+const form1 = document.querySelector('form');
+
+form1.after(newPara);
+
+console.log(newPara.__proto__);
+
+const button1 = document.querySelector('.firstButton');
+
+button1.onclick = () => {
+    alert('sdfdsf');
+}
+
+const html1 = document.querySelector('html');
+
+console.log(html1);
+
+newPara.addEventListener('click', (e) => {
+    console.log('clickedf');
+    console.log(e);
+})
+
+
+
+console.log(document.querySelector('#input1').value);
+
+const ol1 = document.querySelector('.ol11');
+
+ol1.addEventListener('click', (e) => {
+    console.log(e.target);
+})
+
+console.log(document.body);
+
+
+//async
+
+//singe thread
+
+console.log('line1');
+
+console.log('line2');
+
+console.log('line3');
+
+console.log('-------------------');
+//
+
+// prmise pbject -> resovle reject
+
+console.log(Promise);
+
+
+const newProm1 = new Promise( (res, rej) => {
+    res('data11111');
+    rej('datathrown by REJECT')
+});
+
+const newProm2 = new Promise( (res, rej) => {
+    res('data2222222');
+    rej('datathrown by REJECT')
+});
+
+const newProm3 = new Promise( (res, rej) => {
+    res('data333333333');
+    rej('datathrown by REJECT')
+});
+
+
+//
+
+console.log(newProm1);
+
+
+newProm1.then( (data) => {
+    console.log(data);
+
+    newProm2.then((data) => {
+        console.log(data);
+        
+         newProm3.then((data) => {
+            console.log(data);
+         })
+        }) 
+    })
+.catch ( (data) => {
+    console.log(data);              
+})
+
+
+//return another promise in the first promise
+
+// promObj
+//     .then( (resolvedData) => { 
+//         console.log(resolvedData);
+//         return promObj
+//     })
+//     .then( (resolvedData) => { 
+//         console.log(resolvedData);
+//         return promObj
+//     })
+//     .then( (resolvedData) => { 
+//         console.log(resolvedData);
+//         return promObj
+//     })
+//     .then( (resolvedData) => { 
+//         console.log(resolvedData);
+//         return promObj
+//     })
+//     .catch( (rejectData) => {
+//         console.log(rejectData);
+//     })
 
 
 
 
+///// Async functions: Normal functions that RETURN Promise without Explicitly creating and returning Promise
+
+// The data returned from the function becomes the 'resolve' data of the promise -> used by .then
+// The thrown data from the function becomes the 'reject' data of the promise -> used by .catch
+//The whole function itself returns the Promise
 
 
 
 
+const async1 = async function() {
+    console.log('resolved1');
+}
+
+console.log(async1());
 
 
+// Fetch vs axios
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+fetch("https://swapi.dev/api/people/1")
+.then((data) => {
+    console.log(data);
+})

@@ -275,6 +275,7 @@ let outerOuterAsyncFuncNewERRORCHECK = async function () {
 
     try {
     let resolvedOuterAsync = await outerAsyncFuncNew();
+
     console.log(resolvedOuterAsync);
     }
     catch (e) {

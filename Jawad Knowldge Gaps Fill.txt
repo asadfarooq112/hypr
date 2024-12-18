@@ -113,3 +113,24 @@ forEach vs map:
 
 
 Sets are just arrays without duplicate values. You can create new set using Set constructor
+
+
+--Objects captured by DOM are HTML Element type
+
+-- in DOM docuemtn object lies in window object
+
+--many differetn types of dom objects. different ones have different fgucntions
+
+
+e.target only captures the child obejct which is clicked on
+
+--for await async usage, use try catch to do error handling
+
+--then catch [finally: is also like thwen catch but exedutews no watter whathappens]
+
+
+-- Whenever new object is made from class, all the code in the constructor runs first
+
+--Private, protected and subsclasses, inheritence study later
+
+-express.static gives access (makes available) server files to client side

@@ -47,9 +47,14 @@ app.listen(3100, () => {console.log(`Server is listening on port http://localhos
 
 // E.g
 
+// res.send
+// res.json
+// res.render for ejs
+// res.status
+
 //GET root url repsonse
 app.get('/', (req,res) => {
-    res.send('<h1>GET RESPONSE: This is the home directory </h1>');
+    res.status(204).send('<h1>GET RESPONSE: This is the home directory </h1>');
     console.log('we got a GET request on home');
 });
 

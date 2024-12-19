@@ -95,6 +95,7 @@ forEach vs map:
 
 // Object Methods are useful: (don't need to memorize)
 
+
 // Object.keys() – Returns the keys of the object.
 // Object.values() – Returns the values of the object.
 // Object.entries() – Returns the key-value pairs of the object.
@@ -134,3 +135,33 @@ e.target only captures the child obejct which is clicked on
 --Private, protected and subsclasses, inheritence study later
 
 -express.static gives access (makes available) server files to client side
+
+-add semicolon even after { } otherwise compiler can give error
+
+
+- .env files contains secret variables. 
+
+
+____________________________________________
+
+
+always import dotenv module
+
+In packagejson always set type: module
+
+@blabla  help in comments in documetnsation show sup in mouse hove over the fucntion etc
+
+
+http module can be used on top of express -> to setRequest timeouts, manage errors,
+
+If you cant findf methods on an pbject, look in the __proto__
+
+Webserver is different from Application server (node app). CLient request first goes tyo web server then comes to app server (like our http server) 
+
+better to run server using npm start command. and in npm start add the nodemon command
+
+to go to definition of fucntion, pressc ctrl+click
+
+By convention, use err for error and e for events
+
+Sometimes we use [return res.send('bla bla')]  in if conditions, instead of doing only res.send(bla), when we dont want code below return keyword to run. Otherwise eventhough res.send finishes the request and sends the reponse then adn there, the code below can run.

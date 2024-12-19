@@ -4,11 +4,20 @@ import express from 'express';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import {body, validationResult} from 'express-validator';
+import inventoryRouter from './modules/inventory/inventoryRouter.js';
+import productionRouter from './modules/production/productionRouter.js';
+import salesRouter from './modules/sales/salesRouter.js';
+import accountingRouter from './modules/accounting/accountingRouter.js';
+import customersRouter from './modules/customers/customersRouter.js';
+
 dotenv.config();
+
 
 
 // 2) Create server
 const app = express()
+app.set('view engine', 'ejs');
+
 
 
 // 3) Define Global Middlewares
@@ -20,27 +29,35 @@ app.use(helmet());
 app.use(morgan('combined'));
 
 
+
 // 4) Register Routes
 app.get('/', (req,res) => {
-    console.log('home');
-    res.send('asfdsaf');
+    res.render('home.ejs');
 });
 
-
-
-
-
-// 5) Define Error Handling Middlewares
-
-
+app.use('/inventory', inventoryRouter);
+app.use('/production', productionRouter);
+app.use('/sales', salesRouter);
+app.use('/accounting', accountingRouter);
+app.use('/customers', customersRouter);
 
 
 // 6) 404 Error Middleware which gets triggered when the request is not caught by anything above
-app.use((res,req) => {
+app.use((req,res) => {
     res.status(404).send('Not Found 404');
 })
 
-// 7) Server Start
-app.listen(process.env.PORT, () => { console.log(`Server running on PORT ${process.env.PORT}`)});
+
+
+// 7) Error Handling Middleware (that catches errors sent by some middleware by next(err) )
+app.use((err, req, res, next) => {
+    console.log(err.message);
+})
+
+
+
+
+// 8) Server Start
+app.listen(process.env.PORT || 3100 , () => { console.log(`Server running on PORT ${process.env.PORT}`)});
 
 

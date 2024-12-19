@@ -42,3 +42,4 @@ httpServerApp.on('error', (err) => {console.log(`THe error is ${err.code}`)});
 httpServerApp.on('listening', () => {console.log(`Running on port ${process.env.PORT}`)});
 // You can also listen using app
 // You can create events anywhere in code top or bottom, they only run when emitted. But AFTER creating server
+

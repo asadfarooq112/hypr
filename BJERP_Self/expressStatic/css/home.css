@@ -1,0 +1,54 @@
+.h2 {
+    text-align: center;
+    padding-top: 10px;
+    color:#ebac25;
+}
+
+.container-locations {
+    display: flex;
+    height: 100vh;
+    gap: 130px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.location-g3 {
+    border: 2px solid black;
+}
+
+.locations-other {
+    border: 2px dotted black;
+}
+
+.location-g3, .locations-other {
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.p-heading {
+    color: black;
+    font-weight: bold;
+    background-color: #ebac25;
+    text-align: center;
+    font-size: 1em;
+    margin: 0px;
+    padding: 5px;
+    border-bottom: solid 1px black;
+
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.inventory, .sales, .production, .customers, .accounting, .marketing {
+    border-top: 1px solid black;
+    border-bottom: 1px dotted black;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+}

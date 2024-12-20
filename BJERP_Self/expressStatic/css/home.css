@@ -3,7 +3,7 @@
     padding: 0px;
 }
 
-.h2 {
+.h1 {
     text-align: center;
     padding-top: 30px;
     color:#ebac25;
@@ -54,6 +54,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    background-color: rgb(255, 247, 229);
 }
 
 .inventory, .sales, .production, .customers, .accounting, .marketing {

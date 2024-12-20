@@ -39,9 +39,9 @@
 }
 
 .p-heading {
-    color: black;
+    color: white;
     font-weight: bold;
-    background-color: #ffc74f;
+    background-color: rgb(11, 7, 7);
     text-align: center;
     font-size: 1em;
     margin: 0px;
@@ -74,10 +74,10 @@
     user-select: none;
     border:1px solid black;
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 100%;
-    width: 80%;
-    background-color: grey;
+    width: 70%;
+    background-color: rgb(211, 211, 211);
     z-index: 2;
     display: none;
 }
@@ -85,6 +85,10 @@
 .standard-inventory, .onhand-inventory, .past-inventory-sales, .inventory-forecast {
     border: 1px solid black;
     padding: 5px;
+}
+
+.inventory:hover {
+    background-color: #ffb10a;
 }
 
 .inventory:hover .inventory-dropdowns{
@@ -95,5 +99,119 @@
 .onhand-inventory:hover, 
 .past-inventory-sales:hover, 
 .inventory-forecast:hover {
-    background-color: red;
+    background-color: #ffb10a;
+}
+
+
+.sales-dropdowns {
+    text-align: center;
+    font-size: 1em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    user-select: none;
+    border:1px solid black;
+    position: absolute;
+    left: 15%;
+    top: 100%;
+    width: 70%;
+    background-color: rgb(211, 211, 211);
+    z-index: 2;
+    display: none;
+}
+
+
+
+.make-sale, .past-sales, .sales-forecast {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.sales:hover {
+    background-color: #ffb10a;
+}
+
+.sales:hover .sales-dropdowns{
+    display: block;
+}
+
+.make-sale:hover, 
+.past-sales:hover, 
+.sales-forecast:hover {
+    background-color: #ffb10a;
+}
+
+
+
+.production-dropdowns {
+    text-align: center;
+    font-size: 1em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    user-select: none;
+    border:1px solid black;
+    position: absolute;
+    left: 15%;
+    top: 100%;
+    width: 70%;
+    background-color: rgb(211, 211, 211);
+    z-index: 2;
+    display: none;
+}
+
+
+
+.create-order, .material-status, .production-status {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.production:hover {
+    background-color: #ffb10a;
+}
+
+.production:hover .production-dropdowns{
+    display: block;
+}
+
+.create-order:hover, 
+.material-status:hover, 
+.production-status:hover {
+    background-color: #ffb10a;
+}
+
+
+.accounting-dropdowns {
+    text-align: center;
+    font-size: 1em;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    user-select: none;
+    border:1px solid black;
+    position: absolute;
+    left: 15%;
+    top: 100%;
+    width: 70%;
+    background-color: rgb(211, 211, 211);
+    z-index: 2;
+    display: none;
+}
+
+
+
+.make-expense, .financials {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.accounting:hover {
+    background-color: #ffb10a;
+}
+
+.accounting:hover .accounting-dropdowns{
+    display: block;
+}
+
+.make-expense:hover, 
+.financials:hover {
+    background-color: #ffb10a;
 }

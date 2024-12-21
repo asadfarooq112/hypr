@@ -15,6 +15,7 @@ cross.addEventListener('click', () => {
 promptForm.addEventListener('submit', (e) => {
 
     e.preventDefault();
+    chatResponse.innerHTML ='loading...';
 
     // Best practice is to send JSON with requests. Therefore extracting data in textarea
     // and making object. Then using JSON.stringify(obj) to send it in fetch
@@ -30,9 +31,8 @@ promptForm.addEventListener('submit', (e) => {
         midResponse.then((response) => {
             console.log(response);
 
-
             //Changing DOM text
-            chatResponse.innerHTML = `text is ${response}`;
+            chatResponse.innerHTML = response.answer;
 
         })
     })

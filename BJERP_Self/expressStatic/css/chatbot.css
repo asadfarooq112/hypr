@@ -43,7 +43,7 @@
     right: 40px;
     width: 50%;
     height: 70%;
-    background-color: rgb(191, 191, 191);
+    background-color: #e4e4e4;
     border: solid 3px black;
     font-size: 1.4em;
     z-index:100;
@@ -103,6 +103,7 @@
 
 textarea[name="prompt"] {
     flex: 6;
+    font-size: 1.2em;
 }
 
 .prompt-button {

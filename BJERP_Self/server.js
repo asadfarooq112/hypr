@@ -5,11 +5,14 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import {body, validationResult} from 'express-validator';
 import OpenAI from 'openai';
+import fs from 'fs';
+import xlsx from 'xlsx';
 import inventoryRouter from './modules/inventory/inventoryRouter.js';
 import productionRouter from './modules/production/productionRouter.js';
 import salesRouter from './modules/sales/salesRouter.js';
 import accountingRouter from './modules/accounting/accountingRouter.js';
 import customersRouter from './modules/customers/customersRouter.js';
+import { json } from 'stream/consumers';
 
 
 dotenv.config();
@@ -32,19 +35,41 @@ app.use(morgan('combined'));
 
 
 
+
+//////////////
+console.log('Current working directory:', process.cwd());
+
+
+fs.readFile('./expressStatic/BJ_files/json_files/sale-data-based-on-design.json', 'utf8', (err,data) => {
+console.log(data);
+});
+
+
+
+////////////
+
+
+
 ///////chat bullshit
 const openai = new OpenAI({apiKey:process.env.OPEN_AI_KEY});
 
 const completion = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
     messages: [
-        {role: 'developer', content: 'You are assistant of Belgian Jewels, diamond jewelry brand. Pretent to know alot'},
+        {
+            role: 'developer', 
+            content: `You are the Digital Super Intelligence of the company Belgian Jewels. Answer any business questions based on the json data: \n
+            which I actually converted from excel file using xlsx npm and giving you as a prompt. This is the JSON: sdfg } `
+        },
+
         {
             role: 'user',
-            content: 'Tell me about www.belgianjewels.com'
+            content: 'what is the average sale value for our business'
         }
     ]
 });
+
+
 
 console.log(completion.choices[0].message);
 ///

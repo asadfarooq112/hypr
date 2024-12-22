@@ -3,8 +3,8 @@ const router = express.Router();
 
 
 
-router.get('/', (req,res) => {
-    res.send('iinventorryyy');
+router.get('/standard', (req,res) => {
+    res.render('./inventory/standardInventory.ejs');
 })
 
 

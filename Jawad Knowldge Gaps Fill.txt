@@ -164,4 +164,21 @@ to go to definition of fucntion, pressc ctrl+click
 
 By convention, use err for error and e for events
 
-Sometimes we use [return res.send('bla bla')]  in if conditions, instead of doing only res.send(bla), when we dont want code below return keyword to run. Otherwise eventhough res.send finishes the request and sends the reponse then adn there, the code below can run.
+Sometimes we use [return res.send('bla bla')]  in if conditions, instead of doing only res.send(bla), when we dont want code below return keyword to run. Otherwise eventhough res.send finishes the request and sends the reponse then adn there, the code below can run..
+
+ctrl D in VS code selects al instances of that word
+
+add controllers and middlewares in router.js file and add router on main
+
+
+e.g in jewlry in ERP, in products module for example, use controllers for fucntionality and router and controller for product specific functinoaloity
+
+// req.headers (used for managing request headers)
+
+// in routers if we add two paramenters in call back, first one is req, secon is res
+// if we add 3 paramenters, 1st is req, 2nd res, 3rd is next
+// if we add 4, then 1st is error, 2nd req, 3rd res, 4th next
+
+
+when using EJS files and connecting css and js files to the EJS or when connection anything to anythingelse,  <link href="/css/bla.css"> means we are referring to the root directory (so absolute path).
+However when we do <link href="./css/bla.css"> it is the syntax of the RELATIVE  path, relative to the lication of the EJS file. So BE WARY OF THIS.

@@ -1,12 +1,9 @@
 import express from 'express';
+import { standardInventoryShow } from './inventoryController.js';
+
 const router = express.Router();
 
 
-
-router.get('/standard', (req,res) => {
-    res.render('./inventory/standardInventory.ejs');
-})
-
-
+router.get('/standard', standardInventoryShow);
 
 export default router;

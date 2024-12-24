@@ -7,6 +7,75 @@
     <title>Document</title>
 </head>
 <body>
-    <p>adsfsdafadsfasdfdsafsasgsfdgsgsdfdAAAAAAAAAAAAAAAA</p>
+
+    <!-- One time fixed title -->
+    <div class="outer-title-fixed">
+        <div class="g3"><h2>Standard Inventory - G3 Lahore</h2></div>
+
+    <div class="title-flex-container"> 
+        <div class="title"> <p>Image</p> </div>
+        <div class="code"> <p>Code</p> </div>
+        <div class="name"> <p>Name</p> </div>
+        <div class="title"> <p>Metal Type</p> </div>
+        <div class="title"> <p>Number of Diamonds</p> </div>
+        <div class="title"> <p>Total Diamond Weight</p> </div>
+        <div class="title"> <p>Total Weight</p> </div>
+        <div class="title"> <p>Reproduction Price</p> </div>
+        <div class="title"> <p>Sale Price</p> </div>
+        <div class="add-button"> Add </div>
+    </div>
+    </div>
+
+
+    <br><br><br><br><br><br>
+    <h2> Ladies Rings </h2>
+        
+        <% for (let i=0; i<ladiesRings.length; i++) { %>
+        
+            <hr>    
+            <div class="flex-container"> 
+                
+                <div class="img"> <img src=<%= ladiesRings[i].Image %>> </div>
+                <div class="code"> <p> <%= ladiesRings[i].Code %> </p></div>
+                <div class="name"> <p> <%= ladiesRings[i].Name %> </p></div>
+                <div class="metal-type"> <p> <%= ladiesRings[i].MetalType %> </p></div>
+                <div class="number-of-diamonds"> <p> <%= ladiesRings[i].NumberOfDiamonds %> </p></div>
+                <div class="total-diamond-weight"> <p> <%= ladiesRings[i].TotalDiamondWeight %> </p></div>
+                <div class="total-weight"> <p> <%= ladiesRings[i].TotalWeight %> </p></div>
+                <div class="reproduction-price"> <p> <%= ladiesRings[i].ReproductionPrice %> </p></div>
+                <div class="sale-price"> <p> <%= ladiesRings[i].SalePrice %> </p></div>
+                <div class="update-button">Update</div>
+                <div class="delete-button">Delete</div>
+
+
+            </div>
+
+        <% } %>
+
+    <br>
+    <h2> Gents Rings </h2>
+
+    <% for (let i=0; i<mensRings.length; i++) { %>
+        
+        <hr>    
+        <div class="flex-container"> 
+            
+            <div class="img"> <img src=<%= mensRings[i].Image %>> </div>
+            <div class="code"> <p> <%= mensRings[i].Code %> </p></div>
+            <div class="name"> <p> <%= mensRings[i].Name %> </p></div>
+            <div class="metal-type"> <p> <%= mensRings[i].MetalType %> </p></div>
+            <div class="number-of-diamonds"> <p> <%= mensRings[i].NumberOfDiamonds %> </p></div>
+            <div class="total-diamond-weight"> <p> <%= mensRings[i].TotalDiamondWeight %> </p></div>
+            <div class="total-weight"> <p> <%= mensRings[i].TotalWeight %> </p></div>
+            <div class="reproduction-price"> <p> <%= mensRings[i].ReproductionPrice %> </p></div>
+            <div class="sale-price"> <p> <%= mensRings[i].SalePrice %> </p></div>
+            <div class="update-button">Update</div>
+            <div class="delete-button">Delete</div>
+
+
+        </div>
+
+    <% } %>
+
 </body>
 </html>

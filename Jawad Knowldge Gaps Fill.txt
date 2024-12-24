@@ -117,7 +117,14 @@ Sets are just arrays without duplicate values. You can create new set using Set 
 
 
 --Objects captured by DOM are HTML Element type
-
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 -- in DOM docuemtn object lies in window object
 
 --many differetn types of dom objects. different ones have different fgucntions
@@ -167,7 +174,7 @@ By convention, use err for error and e for events
 Sometimes we use [return res.send('bla bla')]  in if conditions, instead of doing only res.send(bla), when we dont want code below return keyword to run. Otherwise eventhough res.send finishes the request and sends the reponse then adn there, the code below can run..
 
 ctrl D in VS code selects al instances of that word
-
+s
 add controllers and middlewares in router.js file and add router on main
 
 
@@ -181,4 +188,36 @@ e.g in jewlry in ERP, in products module for example, use controllers for fucnti
 
 
 when using EJS files and connecting css and js files to the EJS or when connection anything to anythingelse,  <link href="/css/bla.css"> means we are referring to the root directory (so absolute path).
-However when we do <link href="./css/bla.css"> it is the syntax of the RELATIVE  path, relative to the lication of the EJS file. So BE WARY OF THIS.
+However when we do <link href="./css/bla.css"> it is the syntax of the RELATIVE  path, relative to the lication of the EJS file. So BE WARY OF THIS. THEREFORE BETTER TO USE / only (absolute path to static files)
+
+When importing files on sevrer to server (e.g importiing JSON files that are placed on servre to a controller to do something), use ./ (relative path), since / (absolute) accesses the file via FRONT END, and ./ accesses it via backend. think about it whhy :)
+
+use assert {type: 'json'} when importing json directly
+import ladiesRings from './expressStatic/BJ_files/json_files/Ladies_Rings_Complete_Data.json' assert {type: 'json'}
+
+when doing next() in middlewares its good practice to do return next() to make sure nothing after next() runs
+
+To handle error in async fcuntions, use TRY CATCH. and if using async middleware like async (req, res, next) => { bla} then do TRY bla  catch((err) => next(err). Otherwise you can't send next(e) in async without catch(e)
+
+
+In CSS to create time animations use keyframes and media:
+Example:
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+

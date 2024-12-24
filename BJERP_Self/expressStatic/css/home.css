@@ -5,8 +5,9 @@
 
 .h1 {
     text-align: center;
-    padding-top: 30px;
-    color:#ebac25;
+    color: black;
+    background-color: #ffc64b;
+    padding: 5px;
 }
 
 .container-locations {

@@ -1,3 +1,67 @@
-p {
-    color:red;
+* {
+    margin: 0px;
+}
+
+.g3 {
+    text-align: center;
+    background-color:#ebac25;
+}
+
+
+
+.outer-title-fixed {
+position:fixed;
+width: 100%;
+background-color: rgb(213, 213, 213);
+font-size: 1.5em;
+}
+
+.title-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.title, .img, .code, .name, .metal-type, .number-of-diamonds, .total-diamond-weight, .total-weight, .reproduction-price, .sale-price, .add-button, .delete-button, .update-button {
+    flex: 1; /* Distribute space evenly */
+    text-align: center; /* Center text within each column */
+    padding: 0 5px; /* Add some horizontal padding */
+}
+
+.add-button {
+    flex:1;
+    border: 2px solid #ebac25;
+    background-color: #181818;
+    padding: 5px;
+    color:white;
+    margin-right: 5px;
+}
+
+.delete-button, .update-button {
+    flex: 0.5;
+    border: 2px solid #ebac25;
+    background-color: #181818;
+    padding: 5px;
+    color:white;
+    margin-right: 5px;
+}
+
+.add-button:hover, .delete-button:hover, .update-button:hover {
+    background-color: #ebac25;
+    color: black;
+    user-select: none;
 }

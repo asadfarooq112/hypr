@@ -20,7 +20,9 @@ const completion = await openai.chat.completions.create({
             product code is C-2211, metal is 18KW(18 Karat white gold), product type is Chain, DWT is diamond weight, DQTY is diamond \n
             quantity Mwt is metal weight. Another example is: D-6497 Palladium, Ladies Ring, Dwt :.21Ct, DQTY :9, Mwt :2.43	\n
             product code is D-6497, metal is palladium, category is ladies ring, diamond weight is 21 cents, diamond quantity: 9, metal weigh: 2.43gram \n
-            also, Qty means quantitiy sold. -1 means return. Amt is the amount of Pakistani rupees the sale was for		`
+            also, Qty means quantitiy sold. -1 means return. Amt is the amount of Pakistani rupees the sale was for \n
+            Answer in html text so that I can place your prmpot directly in html tags in innerText property of the response tag: \n
+            and dont write backtick backtick backtick html in start and backtick backtick backtick at end of answer		`
         
         },
 

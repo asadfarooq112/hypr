@@ -100,3 +100,11 @@ tr td {
 .inventory-table td {
     border-bottom: 1px solid #ddd; 
 }
+
+.add-product {
+    border: none;
+}
+
+.add-product button {
+    background-color: #FFD879;
+}

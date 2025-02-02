@@ -1,0 +1,102 @@
+* {
+    font-family: "Arial", sans-serif;
+
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.production-order {
+    padding: 10px;
+}
+
+.category-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: default;
+}
+
+.category-bar div {
+    background-color: lightgrey;
+    margin: 5px;
+    text-align: center;
+    height: 40px;
+    padding-top:20px;
+}
+
+.category-bar div:hover {
+    background-color: #FFD879;
+}
+
+
+.cat-ld, .cat-mr, .cat-np, .cat-ds, .cat-e, .cat-p {
+    flex:3;
+}
+
+.cat-all, .cat-o {
+    flex:1;
+}
+
+.category-bar .cat-all {
+    background-color: #FFD879;
+}
+
+.heading-toggles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: default;
+    margin: 5px;
+}
+.heading-toggles div:hover {
+    background-color: #FFD879;
+}
+
+.heading-toggles div {
+    background-color: lightgrey;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.heading-toggles .show-all {
+    background-color: #FFD879;
+}
+
+.inventory-table {
+    width: 100%;
+}
+
+th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.inventory-table .totals th {
+    border: none;
+    font-size: 10px;
+    color: rgb(79, 79, 79);
+}
+
+tr th {
+    font-size: 15px;
+}
+
+tr td {
+    font-size: 12px;
+    text-align: center;
+}
+
+.inventory-table td {
+    border-bottom: 1px solid #ddd; 
+}

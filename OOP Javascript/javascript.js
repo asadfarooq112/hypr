@@ -87,7 +87,10 @@ let ShellFunc1 = function (word1, word2, word3) {
     this.w1 = word1;
     this.w2 = word2;
     this.w3 = word3;
+
 }
+
+
 
 //If we run ShellFunc1() it will give error since .this refers to the WINDOW object
 

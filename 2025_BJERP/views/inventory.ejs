@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="/css/inventory.css">
+</head>
+
+<body>
+    
+    <div class="top-bar"> 
+    <h3> Logo </h3>
+    <h3 class="heading"> Inventory G3 </h3>
+    <button class="production-order"> + Production Order </button>
+    </div>
+
+
+    <div class="category-bar">
+        <div class="cat-all"> All </div>
+        <div class="cat-ld"> Ladies Rings</div>
+        <div class="cat-mr"> Mens Rings</div>
+        <div class="cat-np"> Nose Pins  </div>
+        <div class="cat-ds"> Diamond Sets </div>
+        <div class="cat-e"> Earrings </div>
+        <div class="cat-p">  Pendants </div>
+        <div class="cat-o">  Other  </div>
+    </div>
+
+
+    <div class="heading-toggles">  
+        <div class="show-all"> All </div>
+        <div class="show-category"> Category </div>
+        <div class="show-code"> Code </div>
+        <div class="show-image"> Image </div>
+        <div class="show-name"> Name </div>
+        <div class="show-in-stock"> In Stock </div>
+        <div class="show-description"> Description </div>
+        <div class="show-sizes"> Sizes </div>
+        <div class="show-metal-type"> Metal Type </div>
+        <div class="show-metal-weight"> Metal Weight </div>
+        <div class="show-diamond-weight"> Diamond Weight </div>
+        <div class="show-number-of-diamonds"> # of Diamonds </div>
+        <div class="show-diamond-sizes"> Diamond Sizes </div>
+        <div class="show-gemstone"> Gemstone </div>
+        <div class="show-cost"> Cost Price </div>
+        <div class="show-retail"> Retail Price </div>
+        <div class="show-90day-sold"> 90day Sales </div>
+        <div class="show-min-qty"> Min Qty </div>
+
+    </div>
+
+        </br>
+
+    <table class="inventory-table">
+        <thead>
+            <tr class="totals">
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>686</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th> 34.45 </th>
+                <th> 522.94 </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th> 45166</th>
+                <th> 79622 </th>
+                <th></th>
+                <th></th>
+            </tr>
+
+            <tr class="table-headings">
+                <th></th>
+                <th>Category</th>
+                <th>Code</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>In Stock</th>
+                <th>Description</th>
+                <th>Sizes</th>
+                <th>Metal Type</th>
+                <th>Metal Weight</th>
+                <th>Dia Weight</th>
+                <th># Dia</th>
+                <th>Diamond Sizes</th>
+                <th>Gem</th>
+                <th>Cost</th>
+                <th>Retail</th>
+                <th>90-day Sales</th>
+                <th>Min Qty</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <% for (let i = 0; i < 1000; i++) { %>
+                <tr>
+                    <td class="give-id-of-product"> ✎ </td>
+                    <td> <%= sampleObj.category %> </td>
+                    <td> <%= sampleObj.code %> </td>
+                    <td> <%= sampleObj.image %> </td>
+                    <td> <%= sampleObj.name %> </td>
+                    <td> <%= sampleObj.in_stock %> </td>
+                    <td> <%= sampleObj.description %> </td>
+                    <td> <%= sampleObj.sizes %> </td>
+                    <td> <%= sampleObj.metal_type %> </td>
+                    <td> <%= sampleObj.metal_weight %> </td>
+                    <td> <%= sampleObj.diamond_weight %> </td>
+                    <td> <%= sampleObj.num_diamonds %> </td>
+                    <td> <%= sampleObj.diamond_sizes %> </td>
+                    <td> <%= sampleObj.gemstone %> </td>
+                    <td> <%= sampleObj.cost_price %> </td>
+                    <td> <%= sampleObj.retail_price %> </td>
+                    <td> <%= sampleObj.sales_90_days %> </td>
+                    <td> <%= sampleObj.min_qty %> </td>
+
+                </tr>
+
+            <% } %>
+
+        </tbody>
+    </table>
+    
+
+
+
+
+</body>
+</html>

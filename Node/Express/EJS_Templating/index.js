@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.get('/', (req,res) => { 
   res.render('home.ejs');
-
+ 
 })
 
 
@@ -36,6 +36,7 @@ app.get('/page1', (req,res) => {
  
     res.render('page1.ejs', {randValue:randValue, funcSum: funcSum});    // is key value pair is same, we can also use just key name e.g {randValue, funcSum}
 }) 
+
 
 
 app.get('/r/:subredditName', (req,res) => {

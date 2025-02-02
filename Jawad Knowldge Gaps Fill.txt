@@ -117,6 +117,7 @@ Sets are just arrays without duplicate values. You can create new set using Set 
 
 
 --Objects captured by DOM are HTML Element type
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -218,6 +219,7 @@ Example:
   }
 }
 
-
-
-
+- FUnctions are objects too. so you can add properties and methods to a functions.
+e.g function helloFunc (a) => {blabla};
+    helloFunc.key1 = value1 //we can do this
+    helloFunc.method1 = function (c) => {blabla} //can do this too
